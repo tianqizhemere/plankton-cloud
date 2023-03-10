@@ -1,0 +1,17 @@
+server:
+  port: 9288
+spring:
+  application:
+    name: plankton-gateway
+  cloud:
+    nacos:
+      discovery:
+        namespace: plankton
+        server-addr: 124.222.42.246:8848
+      config:
+        server-addr: 124.222.42.246:8848
+
+gateway:
+  whites:
+    - test
+    - client
