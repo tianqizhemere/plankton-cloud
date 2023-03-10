@@ -27,8 +27,7 @@
         <spring-cloud.version>2021.0.6</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
         <mybatis.plus.version>3.5.1</mybatis.plus.version>
-        <knife4j.version>3.0.2</knife4j.version>
-        <swagger.version>3.0.0</swagger.version>
+        <swagger.fox.version>3.0.0</swagger.fox.version>
         <nacos-client.verison>2.2.0</nacos-client.verison>
     </properties>
 
@@ -51,6 +50,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!-- springboot 依赖 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -66,29 +66,6 @@
                 <artifactId>nacos-client</artifactId>
                 <version>${nacos-client.verison}</version>
             </dependency>
-
-            <!-- Swagger -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>io.swagger</groupId>
-                        <artifactId>swagger-annotations</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>io.swagger</groupId>
-                        <artifactId>swagger-models</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <!-- Swagger knife4j UI 纯UI -->
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-ui</artifactId>
-                <version>${knife4j.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -99,16 +76,41 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!-- bootstrap 启动器 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
             </plugin>
         </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 </project>
