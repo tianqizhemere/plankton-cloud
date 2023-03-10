@@ -34,6 +34,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- spring-cloud-alibaba 依赖 -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -41,6 +42,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- springcloud 依赖 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -48,6 +51,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- springboot 依赖 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -55,12 +59,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--nacos客户端-->
+
+            <!-- nacos客户端 -->
             <dependency>
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-client</artifactId>
                 <version>${nacos-client.verison}</version>
             </dependency>
+
             <!-- Swagger -->
             <dependency>
                 <groupId>io.springfox</groupId>

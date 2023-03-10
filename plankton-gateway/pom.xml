@@ -21,26 +21,30 @@
     </properties>
 
     <dependencies>
-        <!--nacos客户端-->
+        <!-- nacos客户端 -->
         <dependency>
             <groupId>com.alibaba.nacos</groupId>
             <artifactId>nacos-client</artifactId>
         </dependency>
-        <!--注册中心客户端-->
+
+        <!-- 注册中心客户端 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <!--配置中心客户端-->
+
+        <!-- 配置中心客户端 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-        <!--SpringCloud Api Gateway-->
+
+        <!-- SpringCloud Api Gateway -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+
         <!-- Spring Security-->
         <dependency>
             <groupId>org.springframework.security</groupId>
@@ -58,12 +62,14 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
+
         <!-- 自定义的元数据依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+
         <!-- Swagger -->
         <dependency>
             <groupId>io.springfox</groupId>
