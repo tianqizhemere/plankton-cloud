@@ -8,10 +8,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 import vip.plankton.cloud.config.GatewayConfigProperties;
+import vip.plankton.cloud.starter.redis.util.RedisUtil;
 
 import javax.annotation.Resource;
 
 /**
+ * 网关鉴权
+ *
  * @author Wukh
  * @create 2023-03-09
  */
@@ -21,6 +24,9 @@ public class AuthFilter implements GlobalFilter, Ordered {
 
     @Resource
     private GatewayConfigProperties gatewayConfigProperties;
+
+    @Resource
+    private RedisUtil redisUtil;
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {

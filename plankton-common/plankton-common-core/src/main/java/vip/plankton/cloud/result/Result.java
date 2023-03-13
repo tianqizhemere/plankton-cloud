@@ -1,4 +1,4 @@
-package vip.plankton.cloud.api;
+package vip.plankton.cloud.result;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -34,13 +34,13 @@ public class Result<T> {
     private Boolean success;
 
     /**
-     * 初始化一个新创建的 Result 对象，使其表示一个空消息。
+     * 初始化一个新创建的 vip.plankton.cloud.result.Result 对象，使其表示一个空消息。
      */
     public Result() {
     }
 
     /**
-     * 初始化一个新创建的 Result 对象
+     * 初始化一个新创建的 vip.plankton.cloud.result.Result 对象
      *
      * @param code    状态码
      * @param massage 返回内容
@@ -51,7 +51,7 @@ public class Result<T> {
     }
 
     /**
-     * 初始化一个新创建的 Result 对象
+     * 初始化一个新创建的 vip.plankton.cloud.result.Result 对象
      *
      * @param code    状态码
      * @param massage 返回内容
@@ -64,7 +64,7 @@ public class Result<T> {
     }
 
     /**
-     * 初始化一个新创建的 Result 对象
+     * 初始化一个新创建的 vip.plankton.cloud.result.Result 对象
      *
      * @param code    状态码
      * @param massage 返回内容
@@ -77,7 +77,7 @@ public class Result<T> {
     }
 
     /**
-     * 初始化一个新创建的 Result 对象
+     * 初始化一个新创建的 vip.plankton.cloud.result.Result 对象
      *
      * @param code    状态码
      * @param massage 返回内容

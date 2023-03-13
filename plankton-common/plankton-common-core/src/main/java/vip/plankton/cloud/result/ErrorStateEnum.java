@@ -1,4 +1,4 @@
-package vip.plankton.cloud.api;
+package vip.plankton.cloud.result;
 
 import lombok.Getter;
 

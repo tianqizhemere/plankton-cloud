@@ -11,7 +11,7 @@ import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
-import vip.plankton.cloud.api.Result;
+import vip.plankton.cloud.result.Result;
 
 import javax.annotation.Resource;
 

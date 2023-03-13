@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 认证中心 启动类
+ * 统一授权认证微服务 启动类
  *
  * @author Wukh
  * @create 2023-03-10
