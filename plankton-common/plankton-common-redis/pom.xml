@@ -11,10 +11,9 @@
 
     <artifactId>plankton-common-redis</artifactId>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <description>
+        redis缓存服务
+    </description>
 
     <dependencies>
         <!-- springBoot Boot Redis -->

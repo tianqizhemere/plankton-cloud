@@ -15,11 +15,6 @@
         网关服务，负责请求转发和鉴权功能
     </description>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
-
     <dependencies>
         <!-- nacos客户端 -->
         <dependency>

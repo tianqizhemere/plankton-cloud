@@ -11,9 +11,7 @@
 
     <artifactId>plankton-common-core</artifactId>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
-
+    <description>
+        核心模块
+    </description>
 </project>

@@ -11,12 +11,9 @@
 
     <artifactId>plankton-auth</artifactId>
 
-    <description>认证授权中心</description>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <description>
+        认证授权中心
+    </description>
 
     <dependencies>
         <!--注册中心客户端-->
